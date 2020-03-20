@@ -29,6 +29,9 @@ We tried to anallyze the changes of "antlr version" in each "pom.xml" file in ev
 
 ## Findings
 
+1. pom.xml doesn't exists for some commit
+2. 
+
 
 ## Analysis process
 
