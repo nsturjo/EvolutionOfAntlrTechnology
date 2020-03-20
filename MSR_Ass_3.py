@@ -11,14 +11,14 @@ import requests
 import time
 import json
 
-g = Github("nsturjo@gmail.com", "AAaa1234!Q")
+g = Github("nsturjo@gmail.com", "***")
 df = pd.read_csv(r'H:\WS 19-20\Mining Software Repositories\Assignment2\sample.csv')
 
 gh_session = requests.Session()
-gh_session.auth = ("nsturjo@gmail.com", "AAaa1234!Q")
+gh_session.auth = ("nsturjo@gmail.com", "***")
 #github_api = "https://api.github.com"
 #gh_session = requests.Session()
-#gh_session.auth = ("nsturjo@gmail.com", "AAaa1234!Q")
+#gh_session.auth = ("nsturjo@gmail.com", "***")
 
 #gh_session.get(url = url)
 
