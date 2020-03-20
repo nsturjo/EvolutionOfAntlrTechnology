@@ -23,9 +23,20 @@ Commit: SHA code of specific commit
 Time: Timestamp of the commit
 Antlr_version: Version of antler in the file
 
+## Objective
+
+We tried to anallyze the changes of "antlr version" in each "pom.xml" file in every repository from a predefined list of repositories(sample.csv). Every commit/changes on "pom.xml" file is considered in our case.
+
+## Findings
+
+
+## Analysis process
+
 These are the steps how we extracted the antlr version in "pom.xml" files
 1. For every repository we searched the changes/commits over a specific "pom.xml" file from Git Api.
 2. We iterated over each commit to track changes over different commit
 3. We got the "download_url" of the file using PyGithub library
 4. We analyzed the content of the file using basic string operation based on some generic pattern on "pom.xml" file
+
+
 
