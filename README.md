@@ -1,17 +1,29 @@
-# Evolution Of AntlrTechnology
+# Evolution Of Antlr Technology
+
+## Objective
+
+The objective is to observe the usage of antlr technology and its evolution. We tried to find out the presence and change of antlr dependency version in a defined set of public repositories by analyzing 'pom.xml' configuration file throughout their lifespan.
 
 
 ## Build instruction
  
-The main.py file needs to be executed using python compiler which supports python 3.7
-PyGithub needs to be installed using 'pip install PyGithub' command
+The 'Remote_repo_analysis.py' and/or 'Local_Repo_Analysis.py' file needs to be executed seperately using python compiler which supports python 3.7. PyGithub needs to be installed using 'pip install PyGithub' command
 
 ## Run instruction
 
-These modification in main.py file needs to be done before running the solution:
+These modification in 'Remote_repo_analysis.py' file needs to be done before running the solution:
 
 1. update link of csv file(sample.csv) which contains the list of repositories to be mined
 2. individual github userId and password should be updated(twice one for PyGithub and one for Git Api)
+
+The output file of will be generated in 'out.txt' file
+
+Following changes required to run 'Local_Repo_Analysis.py':
+
+1. all the repositores required to be cloned in locally in specific folder
+2. 'path_prefix' should be changed to the parent folder which contains all the repo
+
+The output file will be generated in 'output_ha.csv' file. A sample copy is also uploaded.
 
 Note: "path" variable is assigned with "pom.xml" as we are only analyzing the pom files. Other file types can be also analyzed by changing the path value. However, custom perser should be created to mine different file type.
 
@@ -24,14 +36,12 @@ Commit: SHA code of specific commit
 Time: Timestamp of the commit
 Antlr_version: Version of antler in the file
 
-## Objective
-
-We tried to anallyze the changes of "antlr version" in each "pom.xml" file in every repository from a predefined list of repositories(sample.csv). Every commit/changes on "pom.xml" file is considered in our case.
 
 ## Findings
 
 1. pom.xml doesn't exists for some commit
 2. antlr version doesn't change frequently 
+3. Analyzing local repo is way faster than remote one. However, cloning repo locally require additional costs. 
 
 
 ## Analysis process
