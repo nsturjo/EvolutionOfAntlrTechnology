@@ -3,7 +3,8 @@
 
 ## Build instruction
  
-The main.py file needs to be executed using any python compiler
+The main.py file needs to be executed using python compiler which supports python 3.7
+PyGithub needs to be installed using 'pip install PyGithub' command
 
 ## Run instruction
 
@@ -30,7 +31,7 @@ We tried to anallyze the changes of "antlr version" in each "pom.xml" file in ev
 ## Findings
 
 1. pom.xml doesn't exists for some commit
-2. 
+2. antlr version doesn't change frequently 
 
 
 ## Analysis process
